@@ -21,6 +21,6 @@ void Account::Lock() {
 
 void Account::Unlock() { is_locked_ = false; }
 
-bool operator ==(const Account&l, const Account&r){
-    return l.id_ == r.id_;
+bool operator ==(const Account &l, const Account &r){
+    return l.id() == r.id();
 }
